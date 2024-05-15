@@ -1,9 +1,9 @@
 package celular.AparelhoTelefonico;
 
 public interface ComportamentosAparelho {
-	String ligar();
+	void ligar();
 	
-	String atender();
+	void atender();
 	
-	String iniciarCorreioVoz();
+	void iniciarCorreioVoz();
 }
