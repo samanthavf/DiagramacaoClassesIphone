@@ -1,9 +1,9 @@
 package celular.ReprodutorMusical;
 
 public interface ComportamentosReprodutor {
-	 String tocar();
+	 void tocar();
 	
-	 String pausar();
+	 void pausar();
 	
-	 String selecionarMusica();
+	 void selecionarMusica() throws InterruptedException;
 }

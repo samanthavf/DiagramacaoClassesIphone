@@ -1,9 +1,9 @@
 package celular.Navegador;
 
 public interface ComportamentosNavegador {
-     String exibirPagina();
+     void exibirPagina();
 	
-	 String adicionarNovaAba();
+	 void adicionarNovaAba();
 	
-	 String atualizarPagina();
+	 void atualizarPagina();
 }
