@@ -1,6 +1,8 @@
 package celular.AparelhoTelefonico;
 
-public class AparelhoTelefonico implements ComportamentosAparelho, Runnable{
+import celular.Menu.Menu;
+
+public class AparelhoTelefonico extends Menu implements ComportamentosAparelho, Runnable{
 	
 	public void aparelhoTelefonico() throws InterruptedException {
 		ligar();
@@ -17,6 +19,7 @@ public class AparelhoTelefonico implements ComportamentosAparelho, Runnable{
 				+ " Obrigado.\n");
 		Thread.sleep(1000);
 		desligar();
+		celular();
 	}
 	
 	@Override

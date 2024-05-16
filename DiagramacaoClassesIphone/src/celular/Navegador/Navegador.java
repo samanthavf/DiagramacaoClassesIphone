@@ -1,6 +1,8 @@
 package celular.Navegador;
 
-public class Navegador implements ComportamentosNavegador, Runnable{
+import celular.Menu.Menu;
+
+public class Navegador extends Menu implements ComportamentosNavegador, Runnable{
 	
 	public void navegar() throws InterruptedException {
 		exibirPagina();
@@ -10,6 +12,7 @@ public class Navegador implements ComportamentosNavegador, Runnable{
 		System.out.println("página atualizada.\n");
 		Thread.sleep(1000);
 		adicionarNovaAba();
+		celular();
 	}
 
 	@Override
@@ -20,7 +23,7 @@ public class Navegador implements ComportamentosNavegador, Runnable{
 
 	@Override
 	public void adicionarNovaAba() {
-		System.out.println("nova aba adicionada.");
+		System.out.println("nova aba adicionada.\n");
 	
 	}
 

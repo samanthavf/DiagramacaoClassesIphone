@@ -1,21 +1,12 @@
 package celular;
 
-import celular.AparelhoTelefonico.AparelhoTelefonico;
-import celular.Navegador.Navegador;
-import celular.ReprodutorMusical.Reprodutor;
+import celular.Menu.Menu;
 
 public class Celular {
 
 	public static void main(String[] args) throws InterruptedException {
-		AparelhoTelefonico telefonico = new AparelhoTelefonico();
-		telefonico.aparelhoTelefonico();
-		
-		Navegador navegador = new Navegador();
-		navegador.navegar();
-		
-		Reprodutor reprodutor = new Reprodutor();
-		reprodutor.selecionarMusica();
-
+		Menu menu = new Menu();
+		menu.celular();
 	}
 
 }
